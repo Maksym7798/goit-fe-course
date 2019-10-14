@@ -2,7 +2,7 @@
 
 .header{
   height: 80px;
-  width: 1120px;
+  width: 1140px;
   margin: 0 auto;
 }
 
@@ -28,10 +28,6 @@
 .menu{
   padding-top: 25px;
   list-style-type: none;
-}
-
-.menu-item{
-  
 }
 
 .menu-item-target{
@@ -64,15 +60,16 @@ img{
   text-align: center;
   margin-top: 60px;
   opacity: 0.7;
+  margin-bottom: 90px;
 }
 
-.line{
-  margin-top: 30px;
-  margin-left: 477px;
-  height: 7px;
+.title::after{
+  content:"";
+  display: block;
   width: 165px;
+  height: 7px;
   background-color: #63D8AF;
-  margin-bottom: 90px;
+  margin: 33px auto;
 }
 
 .market-card{
@@ -84,6 +81,10 @@ img{
 
 }
 
+.market-card:hover h3{
+  background-color: #63D8AF;
+}
+
 .price{
   width: 255px;
   height: 40px;
@@ -92,7 +93,7 @@ img{
 .card-subtitle{
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 16px;
-  width: 230px;
+  width: 232px;
   padding: 13px 11px;
   float: left;
   vertical-align: middle;
@@ -113,10 +114,6 @@ img{
   color:rgb(255,255,255);
 }
 
-.card-subtitle:hover{
-  background-color: #63D8AF;
-}
-
 .clearfix::after{
   content:"";
   display: table;
@@ -135,7 +132,7 @@ img{
   margin-bottom: 100px;
 }
 
-.news-card:nth-child(3){
+.news-card:nth-child(2){
   margin-left: 0;
 }
 
@@ -146,13 +143,15 @@ img{
   line-height: 20px;
 }
 
-.news-line{
+.news-subtitle::after{
+  content:"";
+  display: block;
   background-color: #63D8AF;
   width: 135px;
-  height: 2px;
-  margin-top: ;
-  margin-bottom: 30px;
+  height: 3px;
+  margin: 15px 0;
 }
+
 
 .news-image{
   width: 350px;
