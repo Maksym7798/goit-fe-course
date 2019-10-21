@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:100,300,400,700,900&display=swap');
 
 .header{
-  height: 90px;
   width: 1140px;
   margin: 0 auto;
 }
@@ -14,19 +13,26 @@
 }
 
 .logo{
-  position: relative;
-  top: 30px;
+  display: inline-block;
+  float: left;
+  margin: 30px 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
+.logo::first-letter{
+  font-weight: 900;
+  color: #1abc9c;
 }
 
 .menu-item{
-  
+  float: left;
+  margin-left: 30px;
 }
 
 .menu-item-target{
   font-family: 'Open Sans', sans-serif;
   font-size: 12px;
-  float: left;
-  margin-left: 30px;
   text-decoration: none;
   color: black;
 }
@@ -46,6 +52,7 @@
   background-image: url(../img/slide4.png);
   height: 600px;
   max-width: 1600px;
+  
 }
 
 .content{
@@ -54,7 +61,7 @@
 }
 
 .title{
-  margin: -10px 0;
+  margin: 0;
   text-align: center;
   padding-top: 220px;
   color: snow;
@@ -72,21 +79,31 @@
   color: snow;
 }
 
-.arrow-left {
+.slider-ctrl{
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+}
+
+.slider-ctrl-prev {
+  background-image: url(./img/arrow-left.png);
   position: absolute;
   left: 170px;
   bottom: 265px;
   padding: 30px 43px;
 }
 
-.arrow-right{
+.slider-ctrl-next{
   position: absolute;
   padding: 30px 43px;
   right: 170px;
   bottom: 265px;
 }
 
-.arrow:hover{
+.slider-ctrl:hover{
   background-color: #1abc9c;
 }
 
@@ -116,9 +133,10 @@
 
 .collection{
   width: 1110px;
-  height: 500px;
   margin: 0 auto;
   list-style: none;
+  padding: 0;
+  padding-bottom: 100px;
 }
 
 .collection-item{
@@ -226,18 +244,17 @@
 }
 
 .footer{
-  height: 90px;
   background-color: #323232;
-  margin-top: -20px;
   text-align: center;
 }
 
 .footer-title{
   color: #ffffff;
   font-family: 'Open Sans', sans-serif;
+  margin: 0;
   font-weight: 300;
   font-size: 15px;
-  padding-top: 35px;
+  padding: 35px 0;
 }
 
 .footer-subtitle{
