@@ -1,0 +1,211 @@
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+       url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/montserrat-v14-latin-regular.woff') format('woff'); /* Modern Browsers */
+}
+
+/* montserrat-700 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'),
+       url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/montserrat-v14-latin-700.woff') format('woff'); /* Modern Browsers */
+}
+
+/* roboto-slab-regular - latin */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'),
+       url('../fonts/roboto-slab-v9-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto-slab-v9-latin-regular.woff') format('woff'); /* Modern Browsers */
+}
+
+@import url('https://fonts.googleapis.com/css?family=Arizonia|Crimson+Text:400i&display=swap');
+
+.header{
+  width: 940px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+
+.logo{
+  font-size: 26px;
+  color: #fed136;
+  font-family: 'Arizonia', cursive;
+  margin-top: 40px;
+}
+
+.menu{
+  display: flex;
+  justify-content: space-around;
+  width: 480px;
+  margin-top: 50px;
+  padding: 0;
+}
+
+.menu-item{
+  list-style: none;
+}
+
+.menu-item-target{
+  text-decoration: none;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  color:black;
+}
+
+.menu-item-target:hover{
+  color: #fed136;
+}
+
+.content{
+  width: 940px;
+  margin: 0 auto;
+}
+
+.title{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+}
+
+.subtitle{
+  font-size: 16px;
+  font-family: 'Crimson Text', serif;
+  font-style: italic;
+  color: #777777;
+  text-align: center;
+  margin: 10px 0 80px 0;
+}
+
+.content-card{
+  display: flex;
+  justify-content: space-around;
+}
+
+.card{
+  width: 290px;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-logo{
+  width: 70px;
+  height: 70px;
+  border: 3px solid #fed136;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.card-subtitle{
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.card-text{
+  text-align: center;
+  margin: 0;
+  margin-top: 20px;
+  font-family: 'Roboto Slab';
+  font-size: 14px;
+  color: #777777;
+  line-height: 20px;
+}
+
+.contact{
+  background-image: url(../img/background.png);
+  text-align: center;
+  margin-top: 100px;
+  position: relative;
+}
+
+.contact-title{
+  margin: 0;
+  padding-top: 120px;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+}
+
+.contact-subtitle{
+  color: #777777;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Crimson Text', serif;
+  font-style: italic;
+}
+
+.map{
+  position: absolute;
+  right: 0;
+  top: 125px;
+  z-index: 1;
+}
+
+.users{
+  z-index: 2;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.comment-area{
+  height: 50px;
+  width: 445px;
+  padding-left: 20px;
+  margin-bottom: 30px;
+  margin-right: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #bbbbbb;
+}
+
+.comment-area:valid{
+  border: 2px solid green ;
+}
+
+.comment-area:invalid{
+  border: 2px solid red;
+}
+
+.comment{
+  padding-top: 23px;
+  padding-bottom: 213px;
+  margin-bottom: 30px;
+  margin-right: 0;
+  box-sizing: border-box;
+}
+
+.comment-button{
+  width: 240px;
+  height: 65px;
+  background-color: #fed136;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 2%;
+  margin-bottom: 110px;
+}
