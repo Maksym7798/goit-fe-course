@@ -9,7 +9,7 @@
 .logo{
   float: left;
   font-family: 'Quicksand', sans-serif;
-  font-weight: lighter;
+  font-weight: 300;
   font-size: 25px;
   padding-top: 35px;
 }
@@ -27,7 +27,7 @@
 
 .menu{
   padding-top: 25px;
-  list-style-type: none;
+  list-style: none;
 }
 
 .menu-item-target{
@@ -41,6 +41,12 @@
 
 .menu-item-target:hover{
   color:  #63D8AF;
+}
+
+.clearfix::after{
+  content:"";
+  display: table;
+  clear: both;
 }
 
 img{
