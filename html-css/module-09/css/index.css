@@ -41,6 +41,11 @@
   color: #ffffff;
 }
 
+.menu-item-link:hover, .wrapper-link:hover{
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .logo{
   font-family: 'Montserrat', sans-serif;
   color: #ffffff;
