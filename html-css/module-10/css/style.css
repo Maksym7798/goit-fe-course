@@ -71,8 +71,20 @@
 }
 
 .menu__item--icon{
-  width: 30px;
-  height: 30px;
+  padding-bottom: 10px;
+  display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 16px;
+	height: 16px;
+  fill: white;
+  -webkit-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.menu__item--icon:hover{
+  fill: #fce38a;
 }
 
 .menu__item--link:hover{
